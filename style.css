@@ -37,7 +37,7 @@ body {
 }
 
 header {
-  height: auto;
+  height: calc(55vh - 40px);
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -325,7 +325,7 @@ input{
 /*footer section*/
 footer {
   width: 100%;
-  height: 50rem;
+  height: 45vh;
 
   background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
 
@@ -563,10 +563,6 @@ footer {
     font-size: 1.3rem;
   }
 
-  footer {
-    height: 40vh;
-  }
-
   .text-blurb h1 {
     line-height: 5rem;
   }
@@ -719,10 +715,6 @@ footer {
 
 /* to mainly capture ipads/tablets in portrait mode */
 @media (orientation:portrait){
-  header {
-    height: calc(55vh - 40px);
-  }
-
   .header-search {
     grid-column: 2 / 10;
   }
@@ -764,10 +756,6 @@ footer {
   .pokemon__stats {
     padding: 1rem;
   }
-
-  footer {
-    height: 45vh;
-  }
 }
 
 /* to capture most phones in portrait mode */
@@ -797,6 +785,10 @@ footer {
 
 /* to capture most phones in landscape mode */
 @media (max-height:500px){
+  header {
+    height: 100vh;
+  }
+
   .logo {
     grid-column: 3/11;
   }
